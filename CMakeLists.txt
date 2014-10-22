@@ -18,7 +18,9 @@ endif()
 set( PARSER_DEBUG FALSE
   CACHE BOOL "Debug the parser" )
 
-bison_target( parser parser.y ${CMAKE_CURRENT_BINARY_DIR}/parser.c )
+bison_target( parser parser.y
+  ${CMAKE_CURRENT_BINARY_DIR}/parser.c
+  VERBOSE ${CMAKE_CURRENT_BINARY_DIR}/parser.output )
 flex_target( lexer lexer.l ${CMAKE_CURRENT_BINARY_DIR}/lexer.c )
 add_flex_bison_dependency( lexer parser )
 include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
