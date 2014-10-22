@@ -156,6 +156,7 @@ atom: ATOM
 void yyerror (const char *msg)
 {
   fprintf(stderr, "%s\n", msg);
+  exit(1);
 }
 
 /** Insert a new atom into the atom list. If the atom already has an entry,
