@@ -13,5 +13,5 @@ Gets parsed into
 ~~~~
 4 C
 7 H
-2 N
+1 N
 ~~~~
