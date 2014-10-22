@@ -11,5 +11,7 @@ elements. For example, the string
 Gets parsed into
 
 ~~~~
-molecule (canonical form C4H4N1H3): 4:C 7:H 1:N
+4 C
+7 H
+2 N
 ~~~~
